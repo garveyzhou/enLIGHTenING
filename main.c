@@ -22,9 +22,9 @@ int main(int argc, char **argv) {
   double sreflect[3];
 
   // ambient light
-  ambient.red = 50;
-  ambient.green = 50;
-  ambient.blue = 50;
+  ambient.red = 0;
+  ambient.green = 0;
+  ambient.blue = 0;
 
   // one point light source
   light[LOCATION][0] = 0.5;
@@ -32,7 +32,7 @@ int main(int argc, char **argv) {
   light[LOCATION][2] = 1;
 
   light[COLOR][RED] = 0;
-  light[COLOR][GREEN] = 255;
+  light[COLOR][GREEN] = 105;
   light[COLOR][BLUE] = 255;
 
   // view vector
@@ -45,13 +45,13 @@ int main(int argc, char **argv) {
   areflect[GREEN] = 0.1;
   areflect[BLUE] = 0.1;
 
-  dreflect[RED] = 0.5;
-  dreflect[GREEN] = 0.5;
-  dreflect[BLUE] = 0.5;
+  dreflect[RED] = 0.4;
+  dreflect[GREEN] = 0.7;
+  dreflect[BLUE] = 0.7;
 
-  sreflect[RED] = 0.5;
-  sreflect[GREEN] = 0.5;
-  sreflect[BLUE] = 0.5;
+  sreflect[RED] = 0.3;
+  sreflect[GREEN] = 1;
+  sreflect[BLUE] = 1;
 
   screen s;
   zbuffer zb;

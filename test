@@ -1,0 +1,14 @@
+push
+move
+250 250 0
+rotate
+z 45
+rotate
+x 45
+torus
+0 0 0 50 120
+sphere
+0 0 0 50
+display
+save
+eye.png 
